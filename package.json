@@ -1,0 +1,17 @@
+{
+  "name": "vue-group-sheet-desktop",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-web": "npm install --prefix src/web && npm run build --prefix src/web",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^34.3.0"
+  }
+}
