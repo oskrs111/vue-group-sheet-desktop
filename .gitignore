@@ -1,0 +1,15 @@
+node_modules/*
+dist
+.env
+.env.*
+!.env.example
+output/raw/*
+output/gifs/*
+output/debug/*
+output/videos/*
+!output/raw/.gitkeep
+!output/gifs/.gitkeep
+!output/debug/.gitkeep
+!output/videos/.gitkeep
+playwright-report
+test-results
