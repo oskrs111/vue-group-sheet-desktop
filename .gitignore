@@ -1,8 +1,47 @@
-node_modules/*
-dist
+# Dependencies, builds and caches
+node_modules/
+dist/
+release/
+.vite/
+.cache/
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# Legacy web checkout; the desktop build uses GSE_WEB_ROOT or the parent project
+/src/web/
+
+# Environment files and secrets
 .env
 .env.*
 !.env.example
+!**/.env.example
+*.local
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Local documents, settings and temporary files
+/Songs/
+/Collections/
+/Exported/
+/Backup/
+*.gse
+*.col
+*.backup
+workspace-settings.json
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
+
+# Logs and generated recordings
+logs/
+*.log
 output/raw/*
 output/gifs/*
 output/debug/*
@@ -11,5 +50,16 @@ output/videos/*
 !output/gifs/.gitkeep
 !output/debug/.gitkeep
 !output/videos/.gitkeep
-playwright-report
-test-results
+
+# Editor and operating system files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
